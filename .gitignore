@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 api_keys.py
 zArchive/MongoDB Atlas Connection.ipynb
+seek_count.csv
