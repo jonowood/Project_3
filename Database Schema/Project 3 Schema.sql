@@ -15,7 +15,7 @@ CREATE TABLE Job_ID (
 );
 
 -- CONSTRUCTION_SCRAPES
--- SELECT * FROM Construction_Scrapes;
+
 CREATE TABLE Construction_Scrapes (
 	job_id INT,
 	job_title VARCHAR,
