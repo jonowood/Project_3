@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS Sales_Word_Count, Community_Services_Word_Count, Healthcare_Word_Count, Construction_Word_Count, Engineering_Word_Count, All_Fields_Word_Count;
-DROP TABLE IF EXISTS Construction_Location_Count, Engineering_Location_Count, Healthcare_Location_Count, Sales_Location_Count, Community_Services_Location_Count;
+DROP TABLE IF EXISTS Construction_Location_Count, Engineering_Location_Count, Healthcare_Location_Count, Sales_Location_Count, Community_Services_Location_Count, Allfields_Location_Count;
 DROP TABLE IF EXISTS Construction_Scrapes, Engineering_Scrapes, Healthcare_Scrapes, Sales_Scrapes, Community_Service_Scrapes;
 DROP TABLE IF EXISTS Job_ID CASCADE;
 
@@ -15,10 +15,10 @@ CREATE TABLE Job_ID (
 );
 
 -- CONSTRUCTION_SCRAPES
-
+-- SELECT * FROM Construction_Scrapes;
 CREATE TABLE Construction_Scrapes (
 	job_id INT,
-	job_title TEXT,
+	job_title VARCHAR,
 	company_name VARCHAR,
 	short_description TEXT,
 	job_location VARCHAR,
@@ -86,32 +86,32 @@ CREATE TABLE Community_Service_Scrapes (
 
 -- Create tables for LOCATION COUNT
 
+CREATE TABLE Allfields_Location_Count (
+	job_location VARCHAR,
+	count INT
+);
+
 CREATE TABLE Construction_Location_Count (
-	job_field VARCHAR,
 	job_location VARCHAR,
 	count INT
 );
 
 CREATE TABLE Engineering_Location_Count (
-	job_field VARCHAR,
 	job_location VARCHAR,
 	count INT
 );
 
 CREATE TABLE Healthcare_Location_Count (
-	job_field VARCHAR,
 	job_location VARCHAR,
 	count INT
 );
 
 CREATE TABLE Sales_Location_Count (
-	job_field VARCHAR,
 	job_location VARCHAR,
 	count INT
 );
 
 CREATE TABLE Community_Services_Location_Count (
-	job_field VARCHAR,
 	job_location VARCHAR,
 	count INT
 );
@@ -119,43 +119,31 @@ CREATE TABLE Community_Services_Location_Count (
 -- Create tables for WORD COUNT
 
 CREATE TABLE Sales_Word_Count (
-	job_field VARCHAR,
-	job_location VARCHAR,
 	word VARCHAR(25),
 	count INT
 );
 
 CREATE TABLE Community_Services_Word_Count (
-	job_field VARCHAR,
-	job_location VARCHAR,
 	word VARCHAR(25),
 	count INT
 );
 
 CREATE TABLE Healthcare_Word_Count (
-	job_field VARCHAR(30),
-	job_location VARCHAR(30),
-	word VARCHAR(15),
+	word VARCHAR(25),
 	count INT
 );
 
 CREATE TABLE Construction_Word_Count (
-	job_field VARCHAR,
-	job_location VARCHAR,
 	word VARCHAR(25),
 	count INT
 );
 
 CREATE TABLE Engineering_Word_Count (
-	job_field VARCHAR,
-	job_location VARCHAR,
 	word VARCHAR(25),
 	count INT
 );
 
 CREATE TABLE All_Fields_Word_Count (
-	job_field VARCHAR,
-	job_location VARCHAR,
 	word VARCHAR(25),
 	count INT
 );
