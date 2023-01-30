@@ -1,0 +1,55 @@
+
+h1 {
+   
+    text-align: center;
+
+}
+h5 {
+   
+    text-align: center;
+
+}
+
+
+
+a {
+    
+    text-align: center;
+
+}
+/* Navbar */
+.navbar{
+    max-height: 57px; 
+  }
+  .navigation .navbar-brand{
+    color: black; 
+    margin-left: 30px; 
+    padding: inherit; 
+    font-weight: bold;     
+    font-family: sans-serif;
+
+  
+}
+
+
+
+.navbar{
+    background-color: turquoise; 
+    font-size: 15px; 
+  }
+
+
+
+  /* Body*/
+  body {
+    background-color: #ededed;
+  }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
