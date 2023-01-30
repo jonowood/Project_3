@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS Sales_Words, Community_Services_Words, Healthcare_Words, Construction_Words, Engineering_Words, All_Fields_Words;
 DROP TABLE IF EXISTS Sales_Word_Count, Community_Services_Word_Count, Healthcare_Word_Count, Construction_Word_Count, Engineering_Word_Count, All_Fields_Word_Count;
 DROP TABLE IF EXISTS Construction_Location_Count, Engineering_Location_Count, Healthcare_Location_Count, Sales_Location_Count, Community_Services_Location_Count, Allfields_Location_Count;
 DROP TABLE IF EXISTS Construction_Scrapes, Engineering_Scrapes, Healthcare_Scrapes, Sales_Scrapes, Community_Service_Scrapes;
@@ -146,4 +147,30 @@ CREATE TABLE Engineering_Word_Count (
 CREATE TABLE All_Fields_Word_Count (
 	word VARCHAR(25),
 	count INT
+);
+
+-- Create tables for WORD PLOT
+
+CREATE TABLE Sales_Words (
+	word VARCHAR(25)
+);
+
+CREATE TABLE Community_Services_Words (
+	word VARCHAR(25)
+);
+
+CREATE TABLE Healthcare_Words (
+	word VARCHAR(25)
+);
+
+CREATE TABLE Construction_Words (
+	word VARCHAR(25)
+);
+
+CREATE TABLE Engineering_Words (
+	word VARCHAR(25)
+);
+
+CREATE TABLE All_Fields_Words (
+	word VARCHAR(25)
 );
