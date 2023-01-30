@@ -49,7 +49,7 @@ api =   Api(app)
 
 @app.route("/")
 def welcome():
-    return render_template('home.html')
+    return render_template('home.html', 'style.css')
 
 
 ## CURRENTLY JOB ID @ INDEX
