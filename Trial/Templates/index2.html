@@ -15,72 +15,46 @@
     
 
   <!-- Our CSS -->
-     <link rel="stylesheet" type="text/css" href="style2.css">
+     <link rel="stylesheet" type="text/css" href="../static/css/style2.css">
 
   </head>
   <body>
     <!-- Start of navbar -->
     <div class="navigation">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index2.html">Home</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="true"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="index2.html" >Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Industries
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="./construction.html">Construction</a>
-                <a class="dropdown-item" href="./engineering.html">Engineering</a>
-                <a class="dropdown-item" href="./healthcare.html">Healthcare</a>
-
-                
-              </div>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-item nav-link active" href="construction.html">Construction</a>
             </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+           <li class="nav-item">
+              <a class="nav-item nav-link active" href="engineering.html">Engineering</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link active" href="healthcare.html">Healthcare</a>
+            </li>
+          <!-- <li class="nav-item">
+          <a class="nav-item nav-link active" href="Sales.html">Sales</a>
+            </li> -->
+          </ul>          
+        </nav>       
+      </div> 
     <!-- End of navbar -->
 
     <h1>Landing page</h1>
     <hr />
-    <a href="./construction.html">link to construction page</a>
-    </br>
-
-    <a href="./engineering.html"
-      >Link to Engineering page</a
-    >
-    </br>
-    <a href="./healthcare.html"
-      >Click here to view Healthcare</a
-    >
 
     <!-- our JS file -->
-
+    <script src="../static/js/graph.js"></script>
     <!-- <script src="/js/app.js"></script> -->  
-    
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/wc.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <!-- Bootstrap CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
