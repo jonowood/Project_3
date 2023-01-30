@@ -2,6 +2,8 @@ import os
 
 import psycopg2
 
+import pandas as pd
+
 import plotly
 
 import plotly.express as px
@@ -72,7 +74,19 @@ def construction_scrapes():
     cur.close()
     conn.close()
     # return render_template('index.html', jobs=jobs)
-    return jsonify(column_values, column_values2)
+
+    df = pd.DataFrame({
+        "locations": column_values2,
+        "count": column_values
+    })
+    fig = px.bar(df, x="locations", y="count") # , color="City", barmode="stack"
+
+    graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+    header="Construction Job Locations"
+    description = """
+    """
+    return render_template('index.html', graphJSON=graphJSON, header=header,description=description)
+
 
 
 # api.add_resource(returnjsons,'/returnjson')
