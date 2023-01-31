@@ -128,3 +128,126 @@ dmypy.json
 # Pyre type checker
 .pyre/
 api_keys.py
+w3/Jon-Test/New folder/Canvas/license.txt
+w3/Jon-Test/New folder/Canvas/jquery.canvasjs.min.js
+w3/Jon-Test/New folder/Canvas/instruction.txt
+w3/Jon-Test/New folder/Canvas/examples/11-integration/jquery-spline-chart-with-image-export.html
+w3/Jon-Test/New folder/Canvas/examples/11-integration/jquery-spline-area-chart-in-tab.html
+w3/Jon-Test/New folder/Canvas/examples/11-integration/jquery-resizable-chart.html
+w3/Jon-Test/New folder/Canvas/examples/11-integration/jquery-line-chart-with-zoom-pan.html
+w3/Jon-Test/New folder/Canvas/examples/11-integration/jquery-charts.html
+w3/Jon-Test/New folder/Canvas/examples/10-dynamic-charts/dynamic-multi-series-chart.html
+w3/Jon-Test/New folder/Canvas/examples/10-dynamic-charts/dynamic-line-chart.html
+w3/Jon-Test/New folder/Canvas/examples/10-dynamic-charts/dynamic-column-chart.html
+w3/Jon-Test/New folder/Canvas/examples/09-combination-charts/range-area-line-chart.html
+w3/Jon-Test/New folder/Canvas/examples/09-combination-charts/pareto-chart.html
+w3/Jon-Test/New folder/Canvas/examples/09-combination-charts/pareto-chart-with-index-data-label.html
+w3/Jon-Test/New folder/Canvas/examples/09-combination-charts/ohlc-line-chart.html
+w3/Jon-Test/New folder/Canvas/examples/09-combination-charts/error-line-chart.html
+w3/Jon-Test/New folder/Canvas/examples/09-combination-charts/error-chart.html
+w3/Jon-Test/New folder/Canvas/examples/09-combination-charts/error-bar-chart.html
+w3/Jon-Test/New folder/Canvas/examples/09-combination-charts/column-line-area-chart.html
+w3/Jon-Test/New folder/Canvas/examples/08-box-and-whisker-charts/box-and-whisker-chart.html
+w3/Jon-Test/New folder/Canvas/examples/08-box-and-whisker-charts/box-and-whisker-chart-with-outliers.html
+w3/Jon-Test/New folder/Canvas/examples/08-box-and-whisker-charts/box-and-whisker-chart-with-custom-color.html
+w3/Jon-Test/New folder/Canvas/examples/07-scatter-bubble-charts/scatter-point-chart.html
+w3/Jon-Test/New folder/Canvas/examples/07-scatter-bubble-charts/scatter-point-chart-with-custom-marker.html
+w3/Jon-Test/New folder/Canvas/examples/07-scatter-bubble-charts/multi-series-scatter-point-chart.html
+w3/Jon-Test/New folder/Canvas/examples/07-scatter-bubble-charts/bubble-chart.html
+w3/Jon-Test/New folder/Canvas/examples/07-scatter-bubble-charts/bubble-chart-with-zoom-pan.html
+w3/Jon-Test/New folder/Canvas/examples/07-scatter-bubble-charts/bubble-chart-with-data-marker.html
+w3/Jon-Test/New folder/Canvas/examples/06-candlestick-ohlc-charts/ohlc-stock-chart.html
+w3/Jon-Test/New folder/Canvas/examples/06-candlestick-ohlc-charts/ohlc-chart-from-json-data.html
+w3/Jon-Test/New folder/Canvas/examples/06-candlestick-ohlc-charts/multi-series-candlestick-chart.html
+w3/Jon-Test/New folder/Canvas/examples/06-candlestick-ohlc-charts/candlestick-line-chart.html
+w3/Jon-Test/New folder/Canvas/examples/05-pie-doughnut-funnel-pyramid-charts/pyramid-chart.html
+w3/Jon-Test/New folder/Canvas/examples/05-pie-doughnut-funnel-pyramid-charts/pyramid-chart-with-index-label-placed-Inside.html
+w3/Jon-Test/New folder/Canvas/examples/05-pie-doughnut-funnel-pyramid-charts/pyramid-chart-where-area-represents-value.html
+w3/Jon-Test/New folder/Canvas/examples/05-pie-doughnut-funnel-pyramid-charts/pie-chart.html
+w3/Jon-Test/New folder/Canvas/examples/05-pie-doughnut-funnel-pyramid-charts/pie-chart-with-legends.html
+w3/Jon-Test/New folder/Canvas/examples/05-pie-doughnut-funnel-pyramid-charts/pie-chart-with-custom-radius.html
+w3/Jon-Test/New folder/Canvas/examples/05-pie-doughnut-funnel-pyramid-charts/inverted-reversed-funnel-chart.html
+w3/Jon-Test/New folder/Canvas/examples/05-pie-doughnut-funnel-pyramid-charts/funnel-chart.html
+w3/Jon-Test/New folder/Canvas/examples/05-pie-doughnut-funnel-pyramid-charts/funnel-chart-with-custom-neck.html
+w3/Jon-Test/New folder/Canvas/examples/05-pie-doughnut-funnel-pyramid-charts/doughnut-Chart.html
+w3/Jon-Test/New folder/Canvas/examples/05-pie-doughnut-funnel-pyramid-charts/doughnut-chart-with-custom-inner-radius.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/waterfall-chart.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/waterfall-chart-with-custom-color.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/stacked-column-chart.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/stacked-column-100-chart.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/stacked-bar-chart.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/stacked-bar-100-chart.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/range-column-chart.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/range-bar-chart.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/multi-series-waterfall-chart.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/multi-series-range-column-chart.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/multi-series-bar-chart.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/column-chart.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/column-chart-with-multiple-axis.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/bar-chart.html
+w3/Jon-Test/New folder/Canvas/examples/04-column-stacked-range-waterfall-charts/bar-chart-with-axis-scale-break.html
+w3/Jon-Test/New folder/Canvas/examples/03-stacked-spline-range-area-charts/step-area-chart.html
+w3/Jon-Test/New folder/Canvas/examples/03-stacked-spline-range-area-charts/stacked-area-chart.html
+w3/Jon-Test/New folder/Canvas/examples/03-stacked-spline-range-area-charts/stacked-area-100-chart.html
+w3/Jon-Test/New folder/Canvas/examples/03-stacked-spline-range-area-charts/stacked-area-100-chart-with-date-time-axis.html
+w3/Jon-Test/New folder/Canvas/examples/03-stacked-spline-range-area-charts/spline-area-chart.html
+w3/Jon-Test/New folder/Canvas/examples/03-stacked-spline-range-area-charts/range-spline-area-chart.html
+w3/Jon-Test/New folder/Canvas/examples/03-stacked-spline-range-area-charts/range-area-chart.html
+w3/Jon-Test/New folder/Canvas/examples/03-stacked-spline-range-area-charts/multi-series-spline-area-chart.html
+w3/Jon-Test/New folder/Canvas/examples/03-stacked-spline-range-area-charts/multi-series-range-area-chart.html
+w3/Jon-Test/New folder/Canvas/examples/03-stacked-spline-range-area-charts/multi-series-area-chart.html
+w3/Jon-Test/New folder/Canvas/examples/03-stacked-spline-range-area-charts/area-chart.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/step-line-chart.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/spline-chart.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/spline-chart-with-secondary-axis.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/spline-chart-with-legends.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/multi-series-step-line-chart.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/multi-series-spline-chart.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/multi-series-line-chart.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/line-chart.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/line-chart-with-zoom-pan.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/line-chart-with-multiple-axis.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/line-chart-with-logarithmic-axis.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/line-chart-with-data-markers.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/line-chart-with-axis-scale-breaks.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/dynamic-spline-chart.html
+w3/Jon-Test/New folder/Canvas/examples/02-line-spline-step-line-charts/dashed-line-chart.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/performance-demo.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/null-data-chart.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/multi-series-chart.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/interactive-draggable-chart.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/dynamic-chart.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/chart-with-zoom-pan.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/chart-with-secondary-axis.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/chart-with-logarithmic-axis.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/chart-with-inverted-reversed-axis.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/chart-with-index-data-label.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/chart-with-image-overlay.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/chart-with-custom-legend-chart.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/chart-with-crosshair.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/chart-with-axis-scale-breaks.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/chart-from-json-data.html
+w3/Jon-Test/New folder/Canvas/examples/01-overview/animated-chart.html
+w3/Jon-Test/New folder/Canvas/CanvasJSVueComponent.vue
+w3/Jon-Test/New folder/Canvas/canvasjs.react.js
+w3/Jon-Test/New folder/Canvas/canvasjs.min.js
+w3/Jon-Test/New folder/Canvas/canvasjs.angular.component.ts
+w3/Jon-Test/app.py
+w3/Jon-Test/canvasjs-3.7.5.zip
+w3/Jon-Test/canvasjs.min.js
+w3/Jon-Test/jquery.canvasjs.min.js
+w3/Jon-Test/static/canvasjs.min.js
+w3/Jon-Test/static/js/canvasjs.min.js
+w3/Jon-Test/static/style.css
+w3/Jon-Test/templates/animated-chart.html
+w3/Jon-Test/templates/animated-chart1.html
+w3/Jon-Test/templates/barchart.html
+w3/Jon-Test/templates/home.html
+w3/Jon-Test/templates/index2.html
+w3/Jon-Test/templates/instruction.txt
+w3/Jon-Test/templates/jquery.canvasjs.min.js
+w3/Jon-Test/templates/license.txt
+w3/Jon-Test/templates/static/canvasjs.min.js
+w3/Jon-Test/templates/static/js/canvasjs.min.js
+w3/Jon-Test/templates/wordcloud.html
+w3/Jon-Test/wordcloud2.js
