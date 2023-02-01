@@ -49,7 +49,7 @@ api =   Api(app)
 
 @app.route("/")
 def welcome():
-    return render_template('home.html')
+    return render_template('index2.html')
 
 
 ## CURRENTLY JOB ID @ INDEX
@@ -79,15 +79,16 @@ def construction_scrapes():
     cur.close()
     conn.close()
     df = pd.DataFrame({
-        "locations": column_values2,
-        "count": column_values
+        "Locations ": column_values2,
+        "Count ": column_values
     })
-    fig = px.bar(df, x="locations", y="count") # , color="City", barmode="stack"
+    fig = px.pie(df, values="Count ", names="Locations ", hole=0.3)
+    fig.update_layout(margin=dict(t=0, b=0, l=0, r=0)) # , color="City", barmode="stack"
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
     header="Construction Job Locations"
     description = """
     """
-    return render_template('barchart.html', graphJSON=graphJSON, header=header,description=description)
+    return render_template('graph.html', graphJSON=graphJSON, header=header,description=description)
 
 @app.route('/engineering_location_count')
 def engineering_scrapes():
@@ -112,7 +113,7 @@ def engineering_scrapes():
     header="Engineering Job Locations"
     description = """
     """
-    return render_template('barchart.html', graphJSON=graphJSON, header=header,description=description)
+    return render_template('graph.html', graphJSON=graphJSON, header=header,description=description)
 
 @app.route('/sales_location_count')
 def sales_scrapes():
@@ -132,12 +133,13 @@ def sales_scrapes():
         "locations": column_values2,
         "count": column_values
     })
+
     fig = px.bar(df, x="locations", y="count") # , color="City", barmode="stack"
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
     header="Sales Job Locations"
     description = """
     """
-    return render_template('barchart.html', graphJSON=graphJSON, header=header,description=description)
+    return render_template('graph.html', graphJSON=graphJSON, header=header,description=description)
 
 # @app.route('/construction_location_count2')
 # def construction_scrapes2():

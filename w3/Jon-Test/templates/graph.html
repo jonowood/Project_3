@@ -15,11 +15,44 @@
   
   <!-- Our CSS -->
      <link rel="stylesheet" type="text/css" href="../static/css/style.css">
-
+     
      
 <body style="font-family:arial, sans-serif">
+
     <h1>{{header}}</h1>
     <h6><a href="/">Return to index page</a></h6>
+        
+   
+    
+
+    <!-- Start of navbar -->
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light"> 
+                   
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+            aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false">
+                  Industry
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" target="_self" href="/construction_location_count">Construction</a>
+                <a class="dropdown-item" target="_self" href="/engineering_location_count">Engineering</a>
+                <a class="dropdown-item" target="_self" href="/healthcare_location_count">Healthcare</a>
+                <a class="dropdown-item" target="_self" href="/sales_location_count">Sales</a>            
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+      <!-- End of navbar -->
+
     <div id="chart" class="chart"></div>
     <div>{{description}}</div>
 </body>
