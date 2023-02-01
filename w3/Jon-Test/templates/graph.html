@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+    <title>Seek Job Visualisations</title>
+  
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    
+  
+  <!-- Our CSS -->
+     <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+     
+<body style="font-family:arial, sans-serif">
+    <h1>{{header}}</h1>
+    <h6><a href="/">Return to index page</a></h6>
+    <div id="chart" class="chart"></div>
+    <div>{{description}}</div>
+</body>
+​
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript">
+    var graphs = {{graphJSON | safe}};
+    Plotly.plot('chart',graphs,{});        
+</script>
+</html>
