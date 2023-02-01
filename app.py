@@ -50,7 +50,7 @@ def names():
 
     """Return a list of all company names"""          ## Not sure what to do here, maybe company_name?
     # Query all companies
-    results = session.query(Jora_schema.company_name).all()
+    results = session.query(Jora_Schema.company_name).all()
 
     session.close()
 

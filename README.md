@@ -1,3 +1,34 @@
+
+# InteractiveDataViz
+Project 3 Data Analysis Bootcamp - Interactive Data Visualisations
+
+## Interest Rate Changes and the Australian Housing Market
+The objective of this project is to highlight the most popular key words for five industries to assist job seekers in identifying which jobs they may be qualified for or which skills they may need to aquire.
+The interactive dashboard displays word clouds and chord diagrams (MAYBE CHANGE THIS TO PIE GRAPH?) for each of the five industries with the most popular key words appearing the largest.
+
+
+## Data Sources
+Seek: https://www.seek.com.au/?where=All%20Perth%20WA
+Jora: https://au.jora.com/j?l=Perth+WA
+
+
+
+
+## Built With
+- Flask - The web framework used
+- Plotly.js - JavaScript library for creating interactive charts
+
+
+
+
+
+
+
+
+
+
+
+
 # Project 3
 UWA Data Analysis Bootcamp - Project 3 - Team 3
 -----
