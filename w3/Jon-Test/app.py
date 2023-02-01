@@ -29,7 +29,7 @@ from api_keys import postgres_p
 
 def get_db_connection():
     conn = psycopg2.connect(host='localhost',
-                            database='Project_3',
+                            database='jon_seek',
                             user='postgres',
                             password=postgres_p)
     return conn
@@ -49,7 +49,7 @@ api =   Api(app)
 
 @app.route("/")
 def welcome():
-    return render_template('home.html', 'style.css')
+    return render_template('home.html')
 
 
 ## CURRENTLY JOB ID @ INDEX

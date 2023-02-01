@@ -2,6 +2,8 @@
 h1 {
    
     text-align: center;
+    background-color: turquoise; 
+    padding: 100;
 
 }
 h5 {
@@ -47,6 +49,7 @@ a {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background: #f4f4f4;
 }
 
 #chartdiv {

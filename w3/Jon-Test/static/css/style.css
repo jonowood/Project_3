@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+  background-color: lightblue;
+  color: black;
+  padding: 20px;
+}
+
+h2 {
+  color: deeppink;
+}
+
+h6 {
+  color: black;
+  padding-left: 15px;
+}
+
+img {
+  box-shadow: 10px 10px 5px black;
+}
+
+section {
+  background-color: #f4f4f4;
+  padding-left: 10px;
+ 
+
+}
+article {
+  color: black;
+  padding: 10px;
+
+}
+
+p {
+  font-size: 15px;
+  color: gray;
+}
+
+ul {
+  border-style: solid;
+  color: gray;
+}

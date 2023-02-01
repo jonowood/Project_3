@@ -1,8 +1,17 @@
 # Import dependencies 
 from flask import Flask, render_template, url_for
 # Create an app
+from flask_sqlalchemy import SQLAlchemy
+
+
 
 app = Flask(__name__)
+
+# add database
+app.config['SQLALCHEMY_DATABASE_URI'] = 
+
+# secret key
+app.config['secret_key'] = " "
 
 #  Define static routes
 
