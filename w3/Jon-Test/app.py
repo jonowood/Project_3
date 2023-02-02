@@ -49,7 +49,7 @@ api =   Api(app)
 
 @app.route("/")
 def welcome():
-    return render_template('index2.html')
+    return render_template('new.html')
 
 
 ## CURRENTLY JOB ID @ INDEX
@@ -82,13 +82,13 @@ def construction_scrapes():
         "Locations ": column_values2,
         "Count ": column_values
     })
-    fig = px.pie(df, values="Count ", names="Locations ", hole=0.3)
+    fig = px.bar(df, x="Locations ", y="Count ")
     fig.update_layout(margin=dict(t=0, b=0, l=0, r=0)) # , color="City", barmode="stack"
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
     header="Construction Job Locations"
     description = """
     """
-    return render_template('graph.html', graphJSON=graphJSON, header=header,description=description)
+    return render_template('location.html', graphJSON=graphJSON, header=header,description=description)
 
 @app.route('/engineering_location_count')
 def engineering_scrapes():
@@ -105,15 +105,40 @@ def engineering_scrapes():
     cur.close()
     conn.close()
     df = pd.DataFrame({
+        "Locations ": column_values2,
+        "Count ": column_values
+    })
+    fig = px.bar(df, x="Locations ", y="Count ") # , color="City", barmode="stack"
+    graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+    header="Engineering Job Locations"
+    description = """
+    """
+    return render_template('location.html', graphJSON=graphJSON, header=header,description=description)
+
+@app.route('/healthcare_location_count')
+def healthcare_scrapes():
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute('SELECT count FROM healthcare_location_count;')
+    data = cur.fetchall()
+    column_values = []
+    for row in data: column_values.append(row[0])
+    cur.execute('SELECT job_location FROM healthcare_location_count;')
+    data2 = cur.fetchall()
+    column_values2 = []
+    for row in data2: column_values2.append(row[0])
+    cur.close()
+    conn.close()
+    df = pd.DataFrame({
         "locations": column_values2,
         "count": column_values
     })
     fig = px.bar(df, x="locations", y="count") # , color="City", barmode="stack"
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-    header="Engineering Job Locations"
+    header="Healthcare Job Locations"
     description = """
     """
-    return render_template('graph.html', graphJSON=graphJSON, header=header,description=description)
+    return render_template('location.html', graphJSON=graphJSON, header=header,description=description)
 
 @app.route('/sales_location_count')
 def sales_scrapes():
@@ -130,16 +155,146 @@ def sales_scrapes():
     cur.close()
     conn.close()
     df = pd.DataFrame({
-        "locations": column_values2,
-        "count": column_values
+        "Locations ": column_values2,
+        "Count ": column_values
     })
 
-    fig = px.bar(df, x="locations", y="count") # , color="City", barmode="stack"
+    fig = px.bar(df, x="Locations ", y="Count ") # , color="City", barmode="stack"
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
     header="Sales Job Locations"
     description = """
     """
-    return render_template('graph.html', graphJSON=graphJSON, header=header,description=description)
+    return render_template('location.html', graphJSON=graphJSON, header=header,description=description)
+
+
+
+
+## WORD COUNT PIE GRAPHS
+
+
+
+@app.route('/construction_word_count')
+def construction_word_scrapes():
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute('SELECT frequency FROM construction_word_count;')
+    data = cur.fetchall()
+    column_values = []
+    for row in data: column_values.append(row[0])
+    cur.execute('SELECT word FROM construction_word_count;')
+    data2 = cur.fetchall()
+    column_values2 = []
+    for row in data2: column_values2.append(row[0])
+    cur.close()
+    conn.close()
+    df = pd.DataFrame({
+        "Word ": column_values2,
+        "Count ": column_values
+    })
+    fig = px.pie(df, values="Count ", names="Word ", hole=0.3)
+    fig.update_layout(margin=dict(t=0, b=0, l=0, r=0))
+    fig.update_traces(textposition='inside')
+    fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide') # , color="City", barmode="stack"
+    graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+    header="Construction Industry Key Words"
+    description = """
+    """
+    return render_template('words.html', graphJSON=graphJSON, header=header,description=description)
+
+@app.route('/engineering_word_count')
+def engineering_word_scrapes():
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute('SELECT frequency FROM engineering_word_count;')
+    data = cur.fetchall()
+    column_values = []
+    for row in data: column_values.append(row[0])
+    cur.execute('SELECT word FROM engineering_word_count;')
+    data2 = cur.fetchall()
+    column_values2 = []
+    for row in data2: column_values2.append(row[0])
+    cur.close()
+    conn.close()
+    df = pd.DataFrame({
+        "Word ": column_values2,
+        "Count ": column_values
+    })
+    fig = px.pie(df, values="Count ", names="Word ", hole=0.3)
+    fig.update_layout(margin=dict(t=0, b=0, l=0, r=0))
+    fig.update_traces(textposition='inside')
+    fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide') # , color="City", barmode="stack"
+    graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+    header="Engineering Industry Key Words"
+    description = """
+    """
+    return render_template('words.html', graphJSON=graphJSON, header=header,description=description)
+
+
+@app.route('/healthcare_word_count')
+def healthcare_word_scrapes():
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute('SELECT frequency FROM healthcare_word_count;')
+    data = cur.fetchall()
+    column_values = []
+    for row in data: column_values.append(row[0])
+    cur.execute('SELECT word FROM healthcare_word_count;')
+    data2 = cur.fetchall()
+    column_values2 = []
+    for row in data2: column_values2.append(row[0])
+    cur.close()
+    conn.close()
+    df = pd.DataFrame({
+        "Word ": column_values2,
+        "Count ": column_values
+    })
+    fig = px.pie(df, values="Count ", names="Word ", hole=0.3)
+    fig.update_layout(margin=dict(t=0, b=0, l=0, r=0))
+    fig.update_traces(textposition='inside')
+    fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide') # , color="City", barmode="stack"
+    graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+    header="Healthcare Industry Key Words"
+    description = """
+    """
+    return render_template('words.html', graphJSON=graphJSON, header=header,description=description)
+
+
+@app.route('/sales_word_count')
+def sales_word_scrapes():
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute('SELECT frequency FROM sales_word_count;')
+    data = cur.fetchall()
+    column_values = []
+    for row in data: column_values.append(row[0])
+    cur.execute('SELECT word FROM sales_word_count;')
+    data2 = cur.fetchall()
+    column_values2 = []
+    for row in data2: column_values2.append(row[0])
+    cur.close()
+    conn.close()
+    df = pd.DataFrame({
+        "Word ": column_values2,
+        "Count ": column_values
+    })
+    fig = px.pie(df, values="Count ", names="Word ", hole=0.3)
+    fig.update_layout(margin=dict(t=0, b=0, l=0, r=0))
+    fig.update_traces(textposition='inside')
+    fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide')# # , color="City", barmode="stack"
+    graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+    header="Sales Industry Key Words"
+    description = """
+    """
+    return render_template('words.html', graphJSON=graphJSON, header=header,description=description)
+
+
+
+
+
+
+
+
+
 
 # @app.route('/construction_location_count2')
 # def construction_scrapes2():
