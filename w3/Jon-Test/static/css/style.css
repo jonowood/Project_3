@@ -8,8 +8,8 @@ h1 {
   padding-right: 75px;
 }  
 
-h2 {
-  color: deeppink;
+.plot-container {
+  padding: 20px;
 }
 
 h6 {
