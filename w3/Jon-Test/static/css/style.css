@@ -4,6 +4,9 @@ h1 {
   color: black;
   padding: 20px;
 }
+.navbar-expand-lg {
+  padding-right: 75px;
+}  
 
 h2 {
   color: deeppink;
