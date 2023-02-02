@@ -1,10 +1,8 @@
+# Project 3
+UWA Data Analysis Bootcamp - Project 3 - Team 3
 
-# InteractiveDataViz
-Project 3 Data Analysis Bootcamp - Interactive Data Visualisations
-
-## Interest Rate Changes and the Australian Housing Market
-The objective of this project is to highlight the most popular key words for five industries to assist job seekers in identifying which jobs they may be qualified for or which skills they may need to aquire.
-The interactive dashboard displays word clouds and chord diagrams (MAYBE CHANGE THIS TO PIE GRAPH?) for each of the five industries with the most popular key words appearing the largest.
+## Perth Job Market Insights: A Web Scraper for Construction, Engineering, Healthcare, and Sales Job Ads
+Welcome to the Perth-based job ad word scraper! This tool is specifically designed for job seekers looking for construction, engineering, healthcare, and sales jobs in Perth, Western Australia. By analyzing the language used in job postings in these industries, you can gain a deeper understanding of what employers are looking for in potential candidates. By focusing on the most frequently used words in these job ads, you can fine-tune your resume, cover letter, and interview responses to match the skills and experience that are in high demand. With this scraper, you'll be well on your way to landing your next job in Perth's dynamic job market!
 
 
 ## Data Sources
