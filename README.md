@@ -7,24 +7,13 @@ Welcome to the Perth-based job ad word scraper! This tool is specifically design
 
 ## Data Sources
 Seek: https://www.seek.com.au/?where=All%20Perth%20WA
-Jora: https://au.jora.com/j?l=Perth+WA
-
-
 
 
 ## Built With
 - Flask - The web framework used
 - Plotly.js - JavaScript library for creating interactive charts
 
-
-
-
-
-
-
-
-
-
+## Database Diagram
 
 
 # Project 3
@@ -51,55 +40,7 @@ Your project must be powered by a dataset with at least 100 records.
 
 Your project must include some level of user-driven interaction (e.g., menus, dropdowns, textboxes).
 
-Your final visualisation should ideally include at least three views. For this project, you can focus your efforts within a specific industry, as detailed in the following examples.
-
-Finance
-Tracking market data is crucial for equity traders. Not all traders code and are able to create custom-tailored visualisations. What’s the best way for them to get what they need for success?
-
-One option is offered by the Wall Street Journal Links to an external site.. Their website offers a dashboarding tool providing a high-level view of market performance.
-
-This highly interactive tool allows users to easily explore stocks, bonds, currencies, and commodities.
-
-Users of all skill levels can use these data.
-
-Visualisations help make the data easier to understand.
-
-Multiple views are available for customised content.
-
-Healthcare
-Imagine: Vacation time is coming up—and so is flu season. Trying to plan a road trip across the United States while keeping everyone’s health in mind can be tricky.
-
-Using the FluView dashboard provided by the CDC, users can easily confirm which areas to avoid.
-
-Different interactive features include:
-
-An overall view of the United States, or customisable view (state by state).
-
-Historic and current cases.
-
-A chart showing the count of cases, broken down by strain.
-
-With this, data are delivered quickly and navigated through with ease.
-
-Custom
-We’ve only specified healthcare and finance, but any industry can benefit from data visualisation. Consider the following example of weather tracking:
-
-While on the way to work one morning, you notice dark clouds on the horizon. You don’t remember hearing about a storm front coming in, but this looks ominous.
-
-A quick visit to Weather Underground’s Dashboard helps illuminate the situation.
-
-Updated with live data, you can view a live map as well as specific conditions such as temperature, pressure, and even feed from a live webcam.
-
-The data delivery is up-to-date and seamless, making it easy to understand current conditions without digging too deeply.
-
-Working with Your Group
-When working on an online group project, it’s crucial to meet with your group and communicate regularly. Plan for significant collaboration time outside of class. The following tips can help you make the most of your time:
-
-Decide how you’re going to communicate with your group members when you begin. Create a Slack channel, exchange phone numbers, and ensure that the group knows each group member’s available working hours.
-
-Set up an agile project by using GitHub Projects Links to an external site.so that your group can track tasks.
-
-Create internal milestones to ensure that your group is on track. Set due dates for these milestones so that you have a timeline for completing the project. Some of these milestones might include:
+Your final visualisation should ideally include at least three views. For this project, you can focus your efforts within a specific industry.
 
 Project ideation
 
@@ -148,7 +89,8 @@ The following project guidelines focus on teamwork, your project proposal, data 
 Collaborating with Your Team
 Remember that these projects are a group effort. The experience of close collaboration will create better project outcomes and help you in your future careers. Specifically, you’ll learn collaborative workflows that will enable you to approach and solve complex problems. Working in groups allows you to work smart and dream big. Take advantage!
 
-Project Proposal
+#### Project Proposal
+
 Before you start writing any code, your group should outline the scope and purpose of your project. This will help provide direction and safeguard against scope creep (the tendency for projects to become more complex after work begins).
 
 The proposal is essentially a brief summary of your interests and intent. Be sure to include the following details:
@@ -163,7 +105,8 @@ Use the following example for guidance:
 
 The aim of our project is to uncover patterns in credit card fraud. We’ll examine relationships between transaction types and location, purchase prices and times of day, purchase trends over the course of a year, and other related relationships derived from the data.
 
-Finding Data
+#### Finding Data
+
 Once your group has written a proposal, it’s time to start searching for data. We recommend the following curated sources of high-quality data:
 
 data.worldLinks to an external site.
@@ -193,7 +136,8 @@ You’ll likely have to adjust your project plan as you explore the available da
 
 Make sure that your datasets are not too large for your personal computer. Big datasets are difficult to manage locally, so consider using data subsets or different datasets altogether.
 
-Data Cleanup and Analysis
+#### Data Cleanup and Analysis
+
 Now that you’ve picked your data, it’s time to tackle development and analysis. This is where the fun starts!
 
 The analysis process can be broken into two broad phases: (1) exploration and cleanup, and (2) analysis.
@@ -202,9 +146,7 @@ As you’ve learned, you’ll need to explore, clean, and reformat your data bef
 
 After you’ve cleaned your data and are ready to start crunching numbers, you should track your work in a Jupyter notebook dedicated specifically to analysis. We recommend focusing your analysis on multiple techniques, such as aggregation, correlation, comparison, summary statistics, sentiment analysis, and time-series analysis. Don’t forget to include plots during both the exploration and analysis phases. Creating plots along the way can reveal insights and interesting trends in the data that you might not notice if you wait until you’re preparing for your presentation. Presentation requirements will be further explained in the next module.
 
-Presentation Day
+## Presentation Day
 It’s crucial that you find time to rehearse before presentation day.
 
 On the day of your presentation, each member of your group is required to submit the URL of your GitHub repository for grading.
-
-NOTE
