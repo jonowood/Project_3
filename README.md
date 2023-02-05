@@ -1,5 +1,8 @@
 # Project 3
-UWA Data Analysis Bootcamp - Project 3 - Team 3
+This is a submission for UWA Data Analysis Bootcamp
+
+#### Project 3
+#### Team 3
 
 ## Perth Job Market Insights: A Web Scraper for Construction, Engineering, Healthcare, and Sales Job Ads
 Welcome to the Perth-based job ad word scraper! This tool is specifically designed for job seekers looking for construction, engineering, healthcare, and sales jobs in Perth, Western Australia. By analyzing the language used in job postings in these industries, you can gain a deeper understanding of what employers are looking for in potential candidates. By focusing on the most frequently used words in these job ads, you can fine-tune your resume, cover letter, and interview responses to match the skills and experience that are in high demand. With this scraper, you'll be well on your way to landing your next job in Perth's dynamic job market!
