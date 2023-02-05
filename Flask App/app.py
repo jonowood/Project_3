@@ -1,4 +1,6 @@
-# import dependencies
+#################################################
+# Dependencies
+#################################################
 
 import os
 import psycopg2
@@ -7,27 +9,14 @@ import plotly
 import plotly.express as px
 import plotly.io as pio
 import plotly.graph_objects as go
-# pio.templates
 import json
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+from matplotlib.figure import Figure
 from django.shortcuts import render
 from flask import Flask, render_template, jsonify, request, send_file
 from wordcloud import WordCloud, STOPWORDS
 from api_keys import postgres_p
-
-
-from io import BytesIO
-from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
-from matplotlib.figure import Figure
-import matplotlib.pyplot as plt
-# # from wordcloud import WordCloud
-# import io
-
-
-
-from flask_restful import Api, Resource
-
-
-
 
 #################################################
 # Database Setup
@@ -47,27 +36,17 @@ def get_db_connection():
 
 app = Flask(__name__)
 
-api =   Api(app)
-
 #################################################
 # Flask Routes
 #################################################
 
 @app.route("/")
 def welcome():
-    return render_template('new.html')
+    return render_template('index.html')
 
-## CURRENTLY JOB ID @ INDEX
-@app.route("/job_id")
-def job_id():
-    conn = get_db_connection()
-    cur = conn.cursor()
-    cur.execute('SELECT * FROM job_id;')
-    jobs = cur.fetchall()
-    cur.close()
-    conn.close()
-    # return render_template('index.html', jobs=jobs)
-    return jsonify(jobs)
+## LOCATION COUNT BAR PLOTS ##
+
+### APP ROUTE FOR CONSTRUCTION LOCATION COUNT ###
 
 @app.route('/construction_location_count')
 def construction_scrapes():
@@ -94,6 +73,8 @@ def construction_scrapes():
     """
     return render_template('location.html', graphJSON=graphJSON, header=header,description=description)
 
+### APP ROUTE FOR ENGINEERING LOCATION COUNT ###
+
 @app.route('/engineering_location_count')
 def engineering_scrapes():
     conn = get_db_connection()
@@ -119,6 +100,8 @@ def engineering_scrapes():
     """
     return render_template('location.html', graphJSON=graphJSON, header=header,description=description)
 
+### APP ROUTE FOR HEALTHCARE LOCATION COUNT ###
+
 @app.route('/healthcare_location_count')
 def healthcare_scrapes():
     conn = get_db_connection()
@@ -143,6 +126,8 @@ def healthcare_scrapes():
     description = """
     """
     return render_template('location.html', graphJSON=graphJSON, header=header,description=description)
+
+### APP ROUTE FOR SALES LOCATION COUNT ###
 
 @app.route('/sales_location_count')
 def sales_scrapes():
@@ -170,11 +155,9 @@ def sales_scrapes():
     return render_template('location.html', graphJSON=graphJSON, header=header,description=description)
 
 
+## WORD COUNT PIE PLOTS ##
 
-
-## WORD COUNT PIE GRAPHS
-
-
+### APP ROUTE FOR CONSTRUCTION WORD COUNT ###
 
 @app.route('/construction_word_count')
 def construction_word_scrapes():
@@ -205,6 +188,8 @@ def construction_word_scrapes():
     return render_template('resume_helper_pie.html', graphJSON=graphJSON, header=header,description=description)
     fig.show()
 
+### APP ROUTE FOR ENGINEERING WORD COUNT ###
+
 @app.route('/engineering_word_count')
 def engineering_word_scrapes():
     conn = get_db_connection()
@@ -233,7 +218,7 @@ def engineering_word_scrapes():
     """
     return render_template('resume_helper_pie.html', graphJSON=graphJSON, header=header,description=description)
 
-##### WORCLOUDS #################################
+### APP ROUTE FOR HEALTHCARE WORD COUNT ###
 
 @app.route('/healthcare_word_count')
 def healthcare_word_scrapes():
@@ -263,6 +248,7 @@ def healthcare_word_scrapes():
     """
     return render_template('resume_helper_pie.html', graphJSON=graphJSON, header=header,description=description)
 
+### APP ROUTE FOR SALES WORD COUNT ###
 
 @app.route('/sales_word_count')
 def sales_word_scrapes():
@@ -292,6 +278,10 @@ def sales_word_scrapes():
     """
     return render_template('resume_helper_pie.html', graphJSON=graphJSON, header=header,description=description)
 
+## WORD COUNT WORDCLOUD PLOTS ##
+
+### APP ROUTE FOR CONSTRUCTION WORD CLOUD ###
+
 @app.route('/construction_word_cloud')
 def construction_word_cloud():
     conn = get_db_connection()
@@ -314,18 +304,19 @@ def construction_word_cloud():
     wordcloud = WordCloud(width = 800, height = 800,
                     background_color ='white',
                     min_font_size = 10).generate(text)  
-    # plot the WordCloud image                      
+    # plot the WordCloud
     fig = plt.figure(figsize=(8, 8), facecolor=None)
     ax = fig.add_subplot(111)
     ax.imshow(wordcloud, interpolation="bilinear")
     ax.axis("off")
-    
     # Convert the figure to a PNG image
     filename = "wordcloud.png"
     file_path = os.path.join("static", filename)
     plt.savefig(file_path, format="png")
     # Return the image as a response
     return render_template("resume_helper_wordcloud.html", image_path=filename)
+
+### APP ROUTE FOR ENGINEERING WORD CLOUD ###
 
 @app.route('/engineering_word_cloud')
 def engineering_word_cloud():
@@ -348,19 +339,21 @@ def engineering_word_cloud():
     text = df["Word "].str.cat(sep=" ")
     wordcloud = WordCloud(width = 800, height = 800,
                     background_color ='white',
-                    min_font_size = 10).generate(text)  
-    # plot the WordCloud image                      
+                    min_font_size = 10, 
+                    ).generate(text)  
+    # plot the WordCloud
     fig = plt.figure(figsize=(8, 8), facecolor=None)
     ax = fig.add_subplot(111)
     ax.imshow(wordcloud, interpolation="bilinear")
     ax.axis("off")
-    
     # Convert the figure to a PNG image
     filename = "wordcloud.png"
     file_path = os.path.join("static", filename)
     plt.savefig(file_path, format="png")
     # Return the image as a response
     return render_template("resume_helper_wordcloud.html", image_path=filename)
+
+### APP ROUTE FOR HEALTHCARE WORD CLOUD ###
 
 @app.route('/healthcare_word_cloud')
 def healthcare_word_cloud():
@@ -384,12 +377,11 @@ def healthcare_word_cloud():
     wordcloud = WordCloud(width = 800, height = 800,
                     background_color ='white',
                     min_font_size = 10).generate(text)  
-    # plot the WordCloud image                      
+    # plot the WordCloud
     fig = plt.figure(figsize=(8, 8), facecolor=None)
     ax = fig.add_subplot(111)
     ax.imshow(wordcloud, interpolation="bilinear")
     ax.axis("off")
-    
     # Convert the figure to a PNG image
     filename = "wordcloud.png"
     file_path = os.path.join("static", filename)
@@ -397,6 +389,7 @@ def healthcare_word_cloud():
     # Return the image as a response
     return render_template("resume_helper_wordcloud.html", image_path=filename)
 
+### APP ROUTE FOR SALES WORD CLOUD ###
 
 @app.route('/sales_word_cloud')
 def sales_word_cloud():
@@ -419,13 +412,12 @@ def sales_word_cloud():
     text = df["Word "].str.cat(sep=" ")
     wordcloud = WordCloud(width = 800, height = 800,
                     background_color ='white',
-                    min_font_size = 10).generate(text)  
-    # plot the WordCloud image                      
+                    min_font_size = 10).generate(text)
+    # plot the WordCloud
     fig = plt.figure(figsize=(8, 8), facecolor=None)
     ax = fig.add_subplot(111)
     ax.imshow(wordcloud, interpolation="bilinear")
     ax.axis("off")
-    
     # Convert the figure to a PNG image
     filename = "wordcloud.png"
     file_path = os.path.join("static", filename)

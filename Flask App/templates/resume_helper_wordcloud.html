@@ -123,11 +123,9 @@
             <a target="_self" href="/sales_word_cloud">Sales</a>       
           </ul>
         <div class="card-section">
-          <img src="../static/wordcloud.png" alt="Wordcloud" style="width:580px;height:480px;" class="centerX">
+          <img src="../static/wordcloud.png" alt="Wordcloud" class="centerX">
         </div>
     </div>
-
-    <!-- <div>{{description}}</div> -->
   </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
@@ -152,12 +150,10 @@
     var graphs = {{graphJSON | safe}};
     Plotly.plot('chart',graphs,{});        
     </script>
+    
     <script type="text/javascript">
     send_file(buf, mimetype="image/png")
-      </script>
+    </script>
 
 </body>
-
-
-
 </html>
