@@ -14,7 +14,23 @@ Seek: https://www.seek.com.au/?where=All%20Perth%20WA
 - Plotly.js - JavaScript library for creating interactive charts
 
 ## Database Diagram
+<img src="Database Schema/Project 3 ERD.png" alt="" title="" class="center" width="800" height="800">
 
+## Flask App
+#### LANDING PAGE
+<img src="Images/index.png" alt="" title="" class="center" width="800" height="700">
+<br>
+
+#### LOCATION PLOT
+<img src="Images/Bar.png" alt="" title="" class="center" width="800" height="500">
+<br>
+
+#### BUZZWORD PLOT
+<img src="Images/Pie.png" alt="" title="" class="center" width="800" height="500">
+<br>
+
+#### WORDCLOUD PLOT
+<img src="Images/WordCloud.png" alt="" title="" class="center" width="800" height="500">
 
 # Project 3
 UWA Data Analysis Bootcamp - Project 3 - Team 3
