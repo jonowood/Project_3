@@ -120,32 +120,32 @@ CREATE TABLE Community_Services_Location_Count (
 -- Create tables for WORD COUNT
 
 CREATE TABLE Sales_Word_Count (
-	word VARCHAR(25),
+	word VARCHAR,
 	count INT
 );
 
 CREATE TABLE Community_Services_Word_Count (
-	word VARCHAR(25),
+	word VARCHAR,
 	count INT
 );
 
 CREATE TABLE Healthcare_Word_Count (
-	word VARCHAR(25),
+	word VARCHAR,
 	count INT
 );
 
 CREATE TABLE Construction_Word_Count (
-	word VARCHAR(25),
+	word VARCHAR,
 	count INT
 );
 
 CREATE TABLE Engineering_Word_Count (
-	word VARCHAR(25),
+	word VARCHAR,
 	count INT
 );
 
 CREATE TABLE All_Fields_Word_Count (
-	word VARCHAR(25),
+	word VARCHAR,
 	count INT
 );
 
